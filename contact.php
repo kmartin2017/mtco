@@ -4,7 +4,7 @@ $field_name = $_POST['cf_name'];
 $field_email = $_POST['cf_email'];
 $field_message = $_POST['cf_message'];
 
-$mail_to = 'youremail@emaildomain.com';
+$mail_to = 'management@themtco.com';
 $subject = 'Your Subject'.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
