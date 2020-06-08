@@ -1,11 +1,13 @@
 <?php
 
-$field_name = $_POST['name'];
-$field_email = $_POST['email'];
-$field_phone = $_POST['phone'];
-$field_message = $_POST['message'];
+if (isset($_POST['submit'])){
+	$field_name = $_POST['name'];
+	$field_email = $_POST['email'];
+	$field_phone = $_POST['phone'];
+	$field_message = $_POST['message'];
+}
 
-$mail_to = 'management.themtco@gmail.com';
+$mail_to = 'management@themtco.com';
 $subject = 'New Message from theMTCo website! ->'.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
