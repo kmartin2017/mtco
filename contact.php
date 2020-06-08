@@ -1,12 +1,12 @@
 <?php
 
-$field_name = $_POST['cf_name'];
-$field_email = $_POST['cf_email'];
-$field_email = $_POST['cf_phone'];
-$field_message = $_POST['cf_message'];
+$field_name = $_POST['name'];
+$field_email = $_POST['email'];
+$field_phone = $_POST['phone'];
+$field_message = $_POST['message'];
 
 $mail_to = 'management@themtco.com';
-$subject = 'Your Subject'.$field_name;
+$subject = 'New Message from theMTCo website! ->'.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
 $body_message .= 'E-mail: '.$field_email."\n";
