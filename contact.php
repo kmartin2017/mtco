@@ -35,7 +35,7 @@ fwrite($myfile, "\r\n");
 fclose($myfile);
 
 echo "Message Sent";
-window.location.href = "/";
+window.location = "index.html";
 
 // window.location = 'contact.html';
 
