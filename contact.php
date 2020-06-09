@@ -19,6 +19,12 @@ $body_message = $field_message;
 
 $headers = 'From: $field_email \r\n';
 
-$mail_status = mail($mail_to, $subject, $body_message, $headers) or die("Error Message");
-echo "Thank You!" . " -" . "<a href='index.html'> Return Home</a>";
+$myfile = fopen("printing_messages.txt", "w") or die("Unable to open file!");
+
+fwrite($myfile, $mail_to);
+fwrite($myfile, $subject);
+fwrite($myfile, $body_message);
+fwrite($myfile, $headers);
+
+fclose($myfile);
 ?>
