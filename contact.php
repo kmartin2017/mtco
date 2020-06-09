@@ -32,8 +32,10 @@ fwrite($myfile, $mail_to);
 fwrite($myfile, "\r\n");
 fwrite($myfile, "\r\n");
 
-alert('Message Sent');
-window.location = 'contact.html';
+echo"Message Sent";
+window.location.href = "/";
+
+// window.location = 'contact.html';
 
 
 // echo "Thank You!" . " -" . "<a href='index.html'> Return Home</a>";
