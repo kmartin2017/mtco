@@ -19,7 +19,7 @@ $body_message = $field_message;
 
 $headers = 'From: $field_email \r\n';
 
-$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+$myfile = fopen("printing_messages.txt", "a+") or die("Unable to open file!");
 
 fwrite($myfile, $mail_to);
 fwrite($myfile, "\r\n");
