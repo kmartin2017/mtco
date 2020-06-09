@@ -19,12 +19,20 @@ $body_message = $field_message;
 
 $headers = 'From: $field_email \r\n';
 
-$myfile = fopen("printing_messages.txt", "a+") or die("Unable to open file!");
+$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
 
 fwrite($myfile, $mail_to);
+fwrite($myfile, "\r\n");
 fwrite($myfile, $subject);
+fwrite($myfile, "\r\n");
 fwrite($myfile, $body_message);
-fwrite($myfile, $headers);
+fwrite($myfile, "\r\n");
+fwrite($myfile, $mail_to);
+fwrite($myfile, "\r\n");
+fwrite($myfile, "\r\n");
 
-fclose($myfile);
+
+echo "Thank You!" . " -" . "<a href='index.html'> Return Home</a>";
+// $mail_status = mail($mail_to, $subject, $body_message, $headers) or die("Error Message");
+// echo "Thank You!" . " -" . "<a href='index.html'> Return Home</a>";
 ?>
