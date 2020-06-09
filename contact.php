@@ -32,7 +32,9 @@ fwrite($myfile, $mail_to);
 fwrite($myfile, "\r\n");
 fwrite($myfile, "\r\n");
 
-echo"Message Sent";
+fclose($myfile);
+
+echo "Message Sent";
 window.location.href = "/";
 
 // window.location = 'contact.html';
