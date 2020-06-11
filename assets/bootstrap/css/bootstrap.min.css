@@ -5388,6 +5388,10 @@ a.badge:focus {
   -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
 }
+
+
+
+
 .thumbnail > img,
 .thumbnail a > img {
   margin-left: auto;
