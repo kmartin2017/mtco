@@ -5,18 +5,91 @@
 -------*/
 
 /* Create a simple white box, and add the shadow for the initial state */
-.box {
-  position: relative;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+.box_container{
+    margin:30px auto;
+    /* How pronounced should the 3D effects be */
+    perspective: 500;
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    -o-perspective: 500;
+    width:150px;
+    height:150px;
+    position:relative;
+    /*Some UI */
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+    font-size:28px;
+    line-height:150px;
+    vertical-align:middle;
+    cursor:pointer;
 }
+
+.box-front,.box-back{
+    /* Enable 3D transforms */
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+     width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#0090d9;
+    /* Animate the transitions */
+    -webkit-transition:0.8s; text-align:center;
+    -moz-transition:0.8s; text-align:center;
+    -ms-transition:0.8s; text-align:center;
+    -o-transition:0.8s; text-align:center;
+    transition:0.8s; text-align:center;
+    color:#FFF;
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+    }
+
+.box-back{
+    /* The back side is flipped 180 deg by default */
+    transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+    background-color:#f35958;
+ 
+    }
+
+.box_container:hover .box-front{
+    /* When the container is hovered, flip the front side and hide it .. */
+    transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+    }
+
+.box_container:hover .box-back{
+    /* .. at the same time flip the back side into visibility */
+    transform:rotateY(360deg);
+    -webkit-transform:rotateY(360deg);
+    -moz-transform:rotateY(360deg);
+    -ms-transform:rotateY(360deg);
+    -o-transform:rotateY(360deg);
+    -webkit-transform: scale(1.50, 1.50);
+    -ms-transform: scale(1.50, 1.50);
+    transform: scale(1.50, 1.50);
+    }
 
 
 .shadow {
@@ -32,33 +105,52 @@
   font-size: 18px;
   text-align: center;
   border-radius: 10px;
+  
 }
 
-.box::after {
-  content: "";
-  border-radius: 5px;
+.shadow:hover {
+transform:rotateY(360deg);
+    -webkit-transform:rotateY(360deg);
+    -moz-transform:rotateY(360deg);
+    -ms-transform:rotateY(360deg);
+    -o-transform:rotateY(360deg);
+    -webkit-transform: scale(1.50, 1.50);
+    -ms-transform: scale(1.50, 1.50);
+    transform: scale(1.50, 1.50);
+}
+
+
+.shadow-front, .shadow-back {
   position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
 }
 
-.box:hover {
-  -webkit-transform: scale(1.25, 1.25);
-  transform: scale(1.25, 1.25);
-}
-
-.box:hover::after {
-    opacity: 1;
+.shadow-front {
+  background-color: #bbb;
+  color: black;
 }
 
 
+
+
+
+/*.shadow-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.shadow:hover .shadow-inner {
+  transform: rotateY(180deg);
+}*/
+
+
+/*
 
 #slow-transition {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
@@ -66,9 +158,9 @@
 }
 
 #slow-transition:hover {
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
 }
-
+*/
 #fast-transition {
   position: relative;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
