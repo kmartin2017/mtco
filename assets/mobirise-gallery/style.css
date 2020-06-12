@@ -15,7 +15,7 @@
     -o-perspective: 500;
     width:150px;
     height:150px;
-    position:relative;
+    position:flex;
     /*Some UI */
     border-radius:6px;
     -webkit-border-radius:6px;
@@ -30,11 +30,45 @@
 }
 
 p.box_container{
-   vertical-align:middle;
+     vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
 }
 
 div.box_container{
-   vertical-align:middle;
+     vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+
+p.box_front{
+    vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+
+div.box_front{
+     vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+
+p.box_back{
+     vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+  }
+
+div.box_back{
+     vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
 }
 
 .box-front,.box-back{
@@ -66,14 +100,31 @@ div.box_container{
     -moz-border-radius:6px;
     -ms-border-radius:6px;
     -o-border-radius:6px;
+
     vertical-align: middle;
-    
+    display : flex;
+    align-items : center;
+    justify-content: center;
 
     }
 
+.box-inner {
+    border: 1px solid #000000;
+    display: table-cell;
+    vertical-align: middle;
+      vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+
  .box-front{
     font-size:18px;
-    vertical-align:middle; 
+    vertical-align:middle;
+      vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center; 
  }   
 
 .box-back{
@@ -86,6 +137,10 @@ div.box_container{
     background-color:#F5F5F5;
     font-size:14px;
     vertical-align:middle;
+      vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
     }
 
 .box_container:hover .box-front{
