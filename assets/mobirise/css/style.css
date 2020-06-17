@@ -148,7 +148,7 @@ html {
 }
 .content-2 {
   overflow: hidden;
-  padding: 71px 20px 70px;
+  padding: 30px 20px 30px;
   position: relative;
 }
 .content-2.col-5 .row > div {
@@ -214,7 +214,7 @@ html {
 }
 @media (min-width: 992px) {
   .content-2.col-3 {
-    padding-top: 64px;
+    padding-top: 20px;
   }
   .content-2.col-3 .thumbnail h3 {
     margin-top: 4px;
@@ -1998,7 +1998,7 @@ html {
 }
 .mbr-article--wysiwyg blockquote {
   font-size: 17px;
-  border-color: #f97352;
+  border-color: #50ADE6;
 }
 @media (max-width: 767px) {
   .mbr-article--auto-align.mbr-article--wysiwyg p,
