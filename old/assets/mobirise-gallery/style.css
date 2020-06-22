@@ -1,0 +1,407 @@
+/*-------
+
+   Gallery
+
+-------*/
+
+/* Create a simple white box, and add the shadow for the initial state */
+.box_container{
+    margin:30px auto;
+    /* How pronounced should the 3D effects be */
+    perspective: 500;
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    -o-perspective: 500;
+    width:150px;
+    height:150px;
+    position:flex;
+    /*Some UI */
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+    /*font-size:15px;*/
+    /*line-height:150px;*/
+   
+    cursor:pointer;
+    vertical-align:middle;
+}
+
+p.box_container{
+     vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+
+div.box_container{
+     vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+
+p.box_front{
+    vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+
+div.box_front{
+     vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+
+p.box_back{
+     vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+  }
+
+div.box_back{
+     vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+
+.box-front,.box-back{
+    /* Enable 3D transforms */
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+     width:100%;
+    height:100%;
+    position:absolute;
+    
+    /* Animate the transitions */
+    -webkit-transition:0.8s; text-align:center;
+    -moz-transition:0.8s; text-align:center;
+    -ms-transition:0.8s; text-align:center;
+    -o-transition:0.8s; text-align:center;
+    transition:0.8s; text-align:center;
+    color:black;
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+
+    vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+
+    }
+
+.box-inner {
+    border: 1px solid #000000;
+    display: table-cell;
+    vertical-align: middle;
+      vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    color:black;
+
+}
+
+ .box-front{
+    font-size:18px;
+    vertical-align:middle;
+      vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center; 
+    background-color:#90caee;
+    color:black;
+ }   
+
+.box-back{
+    /* The back side is flipped 180 deg by default */
+    transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+    
+    font-size:14px;
+    vertical-align:middle;
+      vertical-align: middle;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+     background-color:#d3e9f8;
+      color:black;
+    }
+
+.box_container:hover .box-front{
+    /* When the container is hovered, flip the front side and hide it .. */
+    transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+    vertical-align:middle;
+    color:black;
+    }
+
+.box_container:hover .box-back{
+    /* .. at the same time flip the back side into visibility */
+    transform:rotateY(360deg);
+    -webkit-transform:rotateY(360deg);
+    -moz-transform:rotateY(360deg);
+    -ms-transform:rotateY(360deg);
+    -o-transform:rotateY(360deg);
+    -webkit-transform: scale(1.25, 1.25);
+    -ms-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+    font-size:14px;
+    vertical-align:middle;
+    color:black;
+    }
+
+
+/*
+.shadow {
+  display: flex;
+  align-items: center;
+  width: 175px;
+  height: 175px;
+  margin: 50px;
+  float: left;
+  box-sizing: border-box;
+  padding: 30px;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+  
+}
+
+.shadow:hover {
+transform:rotateY(360deg);
+    -webkit-transform:rotateY(360deg);
+    -moz-transform:rotateY(360deg);
+    -ms-transform:rotateY(360deg);
+    -o-transform:rotateY(360deg);
+    -webkit-transform: scale(1.50, 1.50);
+    -ms-transform: scale(1.50, 1.50);
+    transform: scale(1.50, 1.50);
+}
+
+
+.shadow-front, .shadow-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.shadow-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+*/
+
+/*.shadow-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.shadow:hover .shadow-inner {
+  transform: rotateY(180deg);
+}*/
+
+
+/*
+
+#slow-transition {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 500ms;
+}
+
+#slow-transition:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+*/
+#fast-transition {
+  position: relative;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+#fast-transition::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+#fast-transition:hover::before {
+  opacity: 1;
+}
+
+
+.mbr-gallery .mbr-gallery-item {
+    position: relative;
+    /*display: inline-block;*/
+    padding-bottom: 30px;
+}
+.mbr-gallery .mbr-gallery-item > a {
+    position: relative;
+    display: block;
+    background: #fff;
+    outline: none;
+}
+.mbr-gallery .mbr-gallery-row {
+    margin-bottom: -30px;
+}
+.mbr-gallery .mbr-gallery-item img {
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: .2s opacity ease-in-out;
+    transition: .2s opacity ease-in-out;
+}
+.mbr-gallery .mbr-gallery-item > a:hover img {
+    opacity: 0.9;
+}
+.mbr-gallery .mbr-gallery-item .icon {
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: .2s opacity ease-in-out;
+    transition: .2s opacity ease-in-out;
+}
+.mbr-gallery .mbr-gallery-item > a:hover .icon {
+    opacity: 1;
+}
+
+/* remove spacing */
+.mbr-gallery .mbr-gallery-row.no-gutter {
+    margin: 0;
+}
+.mbr-gallery .mbr-gallery-row.no-gutter .mbr-gallery-item {
+    padding: 0;
+}
+
+/* container */
+.mbr-gallery .container.mbr-gallery-layout-default {
+    padding: 40px 0;
+}
+
+/* fix horizontal scrollbar */
+.mbr-gallery .mbr-gallery-layout-default,
+.mbr-gallery .mbr-gallery-layout-article {
+    overflow: hidden;
+}
+
+/* article layout */
+.mbr-gallery .mbr-gallery-layout-article > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* lightbox */
+.mbr-gallery .modal {
+    position: fixed;
+    overflow: hidden;
+    padding-right: 0 !important;
+}
+.mbr-gallery .modal-body {
+    padding: 0;
+}
+.mbr-gallery .modal-body img {
+    width: 100%;
+}
+.mbr-gallery .modal .close {
+    position: absolute;
+    background-image: none;
+    font-size: 20px;
+    width: 54px;
+    height: 54px;
+    top: 20px;
+    right: 20px;
+    line-height: 54px;
+    opacity: 1;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    text-shadow: none;
+    z-index: 5;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+.mbr-gallery .modal .close:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* modal back color opacity */
+.modal-backdrop.in {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+@media (max-width: 768px) {
+    .mbr-gallery .modal-dialog {
+        margin: 10px auto;
+    }
+
+    .mbr-gallery .carousel-indicators,
+    .mbr-gallery .carousel-control,
+    .mbr-gallery .modal .close {
+        position: fixed;
+    }
+}
+
+/* fix fade in effect */
+.mbr-gallery .modal.fade .modal-dialog {
+    margin-top: -100px;
+    -webkit-transition: margin-top 0.3s ease-out;
+    -moz-transition: margin-top 0.3s ease-out;
+    -o-transition: margin-top 0.3s ease-out;
+    transition: margin-top 0.3s ease-out;
+}
+.mbr-gallery .modal.in .modal-dialog,
+.mbr-gallery .modal.fade .modal-dialog {
+    -webkit-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+.mbr-gallery .modal.in .modal-dialog {
+    margin-top: 30px;
+}
