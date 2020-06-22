@@ -1,5 +1,0 @@
-#!/bin/bash
-echo "Pulling Website From GitHub"
-git pull
-echo "Running Localhost Server"
-browser-sync start --server --files --directory "*"
