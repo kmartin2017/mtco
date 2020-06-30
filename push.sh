@@ -7,7 +7,13 @@
 #push
 # cd /Users/kathleenmartin/Desktop/mtco
 git add .
-git commit -m "Website update"
+
+echo "Enter commit message: "
+
+read message
+
+git commit -m "$message"
+
 git push
 
 #ssh into instance.
