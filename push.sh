@@ -7,7 +7,7 @@
 #push
 # cd /Users/kathleenmartin/Desktop/mtco
 git add .
-git commit -m "new commit"
+git commit -m "Website update"
 git push
 
 #ssh into instance.
