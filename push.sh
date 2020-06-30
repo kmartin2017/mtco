@@ -17,7 +17,7 @@ sleep 5s
 
 chmod  400 themtco-key-pair.pem
 
-ssh -i themtco-key-pair.pem ec2-user@ec2-54-196-64-65.compute-1.amazonaws.com echo "ssh entered" ; cd var/www/html/mtco; git pull; ls
+ssh -i themtco-key-pair.pem ec2-user@ec2-54-196-64-65.compute-1.amazonaws.com echo "ssh entered" ; cd .. ; cd .. ; cd var/www/html/mtco; git pull; ls
 
 # ATTENTION: when you are in the instance, run ./pull.sh 
 
