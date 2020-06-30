@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "services.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "portfoliom4",
       "title": "PortfolioM4",
@@ -58,7 +58,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 102,
+    "uniqCompNum": 103,
     "versionPublish": "4.12.4",
     "favicon": "@PROJECT_PATH@/assets/images/6-crop-128x128.png",
     "cssOptimize": true,
@@ -912,7 +912,7 @@
     "about.html": {
       "settings": {
         "title": "The MT Co. | About",
-        "order": 1,
+        "order": 2,
         "meta_descr": "The MT Co. provides technology consulting services to small business owners across the globe.",
         "header_custom": ""
       },
@@ -1343,7 +1343,7 @@
             }
           },
           "_name": "extContent16",
-          "_customHTML": "<section class=\"mbr-section extContent\" group=\"Additional Blocks\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Quotes Color\" name=\"quotesColor\" value=\"#333333\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-10 col-sm-12 text-section\">\n                <div class=\"logo align-center\" mbr-class=\"{'pb-5': !showTitle,\n                                 'pb-3': showTitle}\" mbr-if=\"showLogo\">\n                    <a href=\"contact.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/6-500x500.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title>\n                    </a>\n                </div>\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center pb-4\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title, .logo\" mbr-if=\"showTitle\">\n                    ABOUT <b>US</b></h3>\n                <p class=\"mbr-fonts-style mbr-text align-center\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">We are a company built for small business owners. Our goal is to eduate small business owners on the importance of technology for the survival of their company. We want to bring our experience using technology at large companies to a small business lifecycle. Starting locally within Massachussetts, we are helping small businesses leverage technology as they begin to reopen during this coronavirus quarauntine period. The world has been forced onto digital platforms, and small businesses must adapt quickly.</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section extContent\" group=\"Additional Blocks\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Quotes Color\" name=\"quotesColor\" value=\"#333333\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-10 col-sm-12 text-section\">\n                <div class=\"logo align-center\" mbr-class=\"{'pb-5': !showTitle,\n                                 'pb-3': showTitle}\" mbr-if=\"showLogo\">\n                    <a href=\"contact.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/6-500x500.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title>\n                    </a>\n                </div>\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center pb-4\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title, .logo\" mbr-if=\"showTitle\">\n                    ABOUT <b>US</b></h3>\n                <p class=\"mbr-fonts-style mbr-text align-center\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">We are a company built for small business owners. Our goal is to educate small business owners on the importance of technology for the survival of their company. We want to bring our experience using technology at large companies to a small business lifecycle. Starting locally within Massachussetts, we are helping small businesses leverage technology as they begin to reopen during this coronavirus quarantine period. The world has been forced onto digital platforms, and small businesses must adapt quickly.</p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "s2CcL5nupd",
           "_anchor": "extContent16-2i",
           "_protectedParams": [],
@@ -1492,7 +1492,7 @@
     "services.html": {
       "settings": {
         "title": "The MT Co. | Services",
-        "order": 2,
+        "order": 3,
         "meta_descr": "The MT Co. provides technology consulting services to small business owners across the globe.",
         "meta_image": "@PROJECT_PATH@/assets/images/6-500x500.png"
       },
@@ -2219,7 +2219,7 @@
     "contact.html": {
       "settings": {
         "title": "The MT Co. | Contact Us",
-        "order": 5,
+        "order": 6,
         "footer_custom": "",
         "meta_descr": "The MT Co. provides technology consulting services to small business owners across the globe.",
         "meta_image": "@PROJECT_PATH@/assets/images/6-500x500.png"
@@ -2690,7 +2690,7 @@
     "team.html": {
       "settings": {
         "title": "The MT Co. | Meet The Team",
-        "order": 4,
+        "order": 5,
         "meta_image": "@PROJECT_PATH@/assets/images/6-500x500.png",
         "meta_descr": "The MT Co. provides technology consulting services to small business owners across the globe."
       },
@@ -3747,7 +3747,7 @@
     "covid.html": {
       "settings": {
         "title": "The MT Co. | COVID-19",
-        "order": 3,
+        "order": 4,
         "meta_descr": "The MT Co. provides technology consulting services to small business owners across the globe.",
         "meta_image": "@PROJECT_PATH@/assets/images/6-500x500.png"
       },
