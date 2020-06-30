@@ -8,7 +8,7 @@
 # cd /Users/kathleenmartin/Desktop/mtco
 git add .
 
-git commit -m $1
+git commit -m "$1"
 
 git push
 
