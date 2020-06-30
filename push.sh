@@ -13,7 +13,7 @@ git push
 #ssh into instance.
 #change /Users/kathleenmartin/Downloads/themtco-key-pair.pem to the location of your pem file download.
 
-chmod +x themtco-key-pair.pem
+# chmod +x themtco-key-pair.pem
 
 ssh -i themtco-key-pair.pem ec2-user@ec2-54-196-64-65.compute-1.amazonaws.com
 
