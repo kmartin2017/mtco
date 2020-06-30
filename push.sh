@@ -8,9 +8,9 @@
 # cd /Users/kathleenmartin/Desktop/mtco
 git add .
 
-read message
+echo $1
 
-git commit -m "$message"
+git commit -m "message"
 
 git push
 
